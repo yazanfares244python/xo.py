@@ -73,7 +73,7 @@ def xo_game():
                         exit()
                     else:
                         continue
-                if all(spots not in xo_board for spots in xo_board):
+                if all(spots not in positions for spots in xo_board):
                     print("Its' a tie!")
                     break
                 while True:
@@ -89,7 +89,7 @@ def xo_game():
                         exit()
                     else:
                         continue
-                if all(spots not in xo_board for spots in xo_board):
+                if all(spots not in positions for spots in xo_board):
                     print("Its' a tie!")
                     break
     start_game()
